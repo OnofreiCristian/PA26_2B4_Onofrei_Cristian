@@ -1,0 +1,30 @@
+public class Person implements Profile {
+
+    private String name;
+    private int id;
+    public Person(int id, String name){
+        this.id=id;
+        this.name=name;
+    }
+
+    @Override
+    public int getId(){
+        return id;
+    }
+
+    @Override
+    public String getName(){
+        return name;
+    }
+
+    @Override
+    public int compareTo(Profile o) {
+        return this.name.compareTo(o.getName());
+    }
+
+    @Override
+    public String toString(){
+        return id + "-" + name;
+    }
+
+}
