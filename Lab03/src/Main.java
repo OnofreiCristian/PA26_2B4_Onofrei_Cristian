@@ -1,17 +1,33 @@
 
 void main() {
 
-    List<Profile> profileList = new ArrayList<>();
+   SocialNetwork network = new SocialNetwork();
 
-    profileList.add(new Company(1,"Apple"));
-    profileList.add(new Company(2,"Microsoft"));
-    profileList.add(new Person(3,"Popescu Ion"));
-    profileList.add(new Person(4,"Ionescu Petru"));
+    Company Apple = new Company(1,"Apple", "Tech");
+    Company Microsoft = new Company(2,"Microsoft", "Tech");
 
-    Collections.sort(profileList);
+    Programmer Popescu_Ion = new Programmer(3,"Popescu Ion", new Date(1999,10,1), "C++");
+    Designer Ionescu_Petru = new Designer(4,"Ionescu Petru", new Date(2001, 6, 16), "Photoshop");
 
-    System.out.println(profileList);
+    Popescu_Ion.addProfileToMap(Ionescu_Petru,"friends");
+    Ionescu_Petru.addProfileToMap(Popescu_Ion,"friends");
 
-    profileList.sort(new ProfileComparator());
+    Popescu_Ion.addProfileToMap(Apple, "programmer");
+    Ionescu_Petru.addProfileToMap(Microsoft,"designer");
+    Ionescu_Petru.addProfileToMap(Apple,"designer");
+
+    network.addProfile(Apple);
+    network.addProfile(Microsoft);
+    network.addProfile(Popescu_Ion);
+    network.addProfile(Ionescu_Petru);
+
+
+    network.printList();
+
+    network.sortByInitial();
+    network.printList();
+
+    network.sortByImportance();
+    network.printList();
 
 }

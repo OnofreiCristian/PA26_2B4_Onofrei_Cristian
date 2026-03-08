@@ -2,9 +2,11 @@ public class Company implements Profile {
 
     private String name;
     private int id;
-    public Company(int id, String name){
+    private String domain;
+    public Company(int id, String name, String domain) {
         this.id=id;
         this.name=name;
+        this.domain=domain;
     }
 
     @Override
