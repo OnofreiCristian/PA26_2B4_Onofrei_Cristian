@@ -15,7 +15,7 @@ public class SocialNetwork {
 
     public void printList(){
         for(Profile p : profileList){
-        System.out.print(p.toString() + "Importance: " + importance(p) + "; ");
+        System.out.print(p.toString() + " Importance: " + importance(p) + "; ");
         }
 
         System.out.println("\n");
