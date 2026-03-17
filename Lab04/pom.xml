@@ -22,6 +22,19 @@
             <version>1.18.42</version>
             <scope>compile</scope>
         </dependency>
+
+        <dependency>
+            <groupId>net.datafaker</groupId>
+            <artifactId>datafaker</artifactId>
+            <version>2.5.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.graph4j</groupId>
+            <artifactId>graph4j</artifactId>
+            <version>1.0.8</version>
+        </dependency>
+
     </dependencies>
 
 </project>

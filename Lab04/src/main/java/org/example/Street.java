@@ -13,6 +13,8 @@ public class Street implements Comparable<Street> {
 
     private String name;
     private int length;
+    private Intersection startIntersection;
+    private Intersection endIntersection;
 
     @Override
     public int compareTo(Street street) {
