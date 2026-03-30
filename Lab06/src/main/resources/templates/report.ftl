@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Raport Filme</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        h1 { color: #333; text-align: center; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background-color: #4CAF50; color: white; }
+        tr:nth-child(even) { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+
+    <h1>Baza de Date Filme</h1>
+
+    <table>
+        <tr>
+            <th>Titlu</th>
+            <th>Data Lansării</th>
+            <th>Durată (min)</th>
+            <th>Scor</th>
+            <th>Gen</th>
+        </tr>
+        <#list movies as movie>
+        <tr>
+            <td>${movie.title}</td>
+            <td>${movie.releaseDate}</td>
+            <td>${movie.duration}</td>
+            <td>${movie.score}</td>
+            <td>${movie.genre}</td>
+        </tr>
+        </#list>
+    </table>
+
+</body>
+</html>
