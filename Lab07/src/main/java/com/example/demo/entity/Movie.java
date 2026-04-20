@@ -25,9 +25,7 @@ public class Movie {
 
     @Column(name = "release_date")
     private LocalDate releaseDate;
-
     private Integer duration;
-
     private Float score;
 
     @Column(name = "genre_id")
