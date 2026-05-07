@@ -6,7 +6,6 @@ import maze_logic.Maze;
 
 public class GameWindow extends JFrame {
 
-    // We keep a reference to the panel so we can easily tell it to redraw
     private final MazePanel mazePanel;
 
     public GameWindow(Maze maze) {

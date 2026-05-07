@@ -5,23 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d1f65ff-91d3-4c08-8072-d4a95cc291d4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/actors/Bunny.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/actors/Entity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/actors/Robot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/manager/TimeManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/maze_logic/Cell.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/maze_logic/Maze.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/memory/SharedMemory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/movement/CommandListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/window/GameWindow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/window/MazePanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab01Homework/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01Homework/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab04/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab04/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/actors/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/actors/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/actors/Robot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/actors/Robot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/maze_logic/Maze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/maze_logic/Maze.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/memory/SharedMemory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/memory/SharedMemory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/window/GameWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/window/GameWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/window/MazePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/window/MazePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10/Lab10Client/src/main/java/client/GameClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab10/Lab10Client/src/main/java/client/GameClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10/Lab10Server/src/main/java/org/example/ClientThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab10/Lab10Server/src/main/java/org/example/ClientThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10/Lab10Server/src/main/java/org/example/GameServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab10/Lab10Server/src/main/java/org/example/GameServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10Client/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10Client/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab2/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,23 +45,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Cris/Desktop/Facultate/An2/Sem2/Programare Avansata/Lab09",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/Cris/Desktop/Facultate/An2/Sem2/Programare Avansata/Lab09/src/main/java/org/example/Main.java",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Cris/Desktop/Facultate/An2/Sem2/Programare Avansata/Lab09&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Cris/Desktop/Facultate/An2/Sem2/Programare Avansata/Lab09/src/main/java/org/example/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />

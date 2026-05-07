@@ -17,12 +17,9 @@ public class GameServer {
             serverSocket = new ServerSocket(PORT);
             System.out.println("Game Server is running and waiting for players on port " + PORT + "...");
 
-
             while (running) {
-
                 Socket socket = serverSocket.accept();
                 System.out.println("A new client connected!");
-
                 new ClientThread(socket, this).start();
             }
         } catch (SocketException e) {

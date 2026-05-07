@@ -25,39 +25,33 @@ public class MazePanel extends JPanel {
 
         if (maze == null) return;
 
-        // Fetch dimensions from the maze
         int rows = maze.getHeight();
         int cols = maze.getWidth();
 
-        // Calculate dynamic cell sizes so the grid scales if the window is resized
         int cellWidth = getWidth() / cols;
         int cellHeight = getHeight() / rows;
 
-        // Iterate through the grid and draw each cell
         for (int y = 0; y < rows; y++) {
             for (int x = 0; x < cols; x++) {
                 Cell cell = maze.getCell(x, y);
 
-                // 1. Determine the color based on the cell's state
+
                 if (cell.isWall()) {
-                    g.setColor(Color.BLACK); // Walls are Black
+                    g.setColor(Color.BLACK);
                 } else if (cell == maze.getExitCell() && cell.getCurrentOccupant() == null) {
-                    g.setColor(Color.GREEN); // The Exit is Green
+                    g.setColor(Color.GREEN);
                 } else if (cell.getCurrentOccupant() != null) {
                     Entity occupant = cell.getCurrentOccupant();
                     if (occupant instanceof Bunny) {
-                        g.setColor(Color.PINK); // The Bunny is Pink
+                        g.setColor(Color.PINK);
                     } else if (occupant instanceof Robot) {
-                        g.setColor(Color.RED); // Robots are Red
+                        g.setColor(Color.RED);
                     }
                 } else {
-                    g.setColor(Color.WHITE); // Empty floors are White
+                    g.setColor(Color.WHITE);
                 }
 
-                // 2. Draw the filled block
                 g.fillRect(x * cellWidth, y * cellHeight, cellWidth, cellHeight);
-
-                // 3. Draw a subtle grid line border around the cell
                 g.setColor(Color.LIGHT_GRAY);
                 g.drawRect(x * cellWidth, y * cellHeight, cellWidth, cellHeight);
             }

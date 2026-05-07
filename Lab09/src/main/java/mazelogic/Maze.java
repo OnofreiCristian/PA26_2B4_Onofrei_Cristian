@@ -62,7 +62,6 @@ public class Maze {
     }
 
     public Cell getExitCell() { return exitCell; }
-
     public boolean isGameOver() { return isGameOver; }
     public void setGameOver(boolean gameOver) { isGameOver = gameOver; }
 

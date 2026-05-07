@@ -8,8 +8,6 @@ public abstract class Entity implements Runnable {
     protected Cell currentCell;
     protected Maze maze;
 
-    // --- Phase 4: NEW Control variables ---
-    // We use protected so Bunny and Robot can access them directly
     protected volatile int speedDelay = 300;
     protected volatile boolean isPaused = false;
 

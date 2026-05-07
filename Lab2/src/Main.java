@@ -22,16 +22,16 @@ public static void main() {
 
     Road drum2 = new Road(RoadTypes.AUTOSTRADA, 200, 100, Iasi, Bucuresti);
 
-   // Road drum3 = new Road(RoadTypes.EUROPEAN, 200, 80, Iasi, Suceava);
+    Road drum3 = new Road(RoadTypes.EUROPEAN, 200, 80, Iasi, Suceava);
 
     problemManager.addRoad(drum1);
     problemManager.addRoad(drum2);
-   // problemManager.addRoad(drum3);
+    problemManager.addRoad(drum3);
 
-    System.out.println(problemManager.isValid());
+    System.out.println("E problema valida? " +  problemManager.isValid());
 
-    System.out.println(problemManager.roadBetweenLocations(Iasi, Bucuresti));
+    System.out.println("Avem drum de la Iasi la Bucuresti? : " + problemManager.roadBetweenLocations(Iasi, Bucuresti));
 
-    System.out.println(problemManager.roadBetweenLocations(Iasi, Suceava));
+    System.out.println("Avem drum de la Iasi la Suceava? : " +problemManager.roadBetweenLocations(Iasi, Suceava));
 
 }

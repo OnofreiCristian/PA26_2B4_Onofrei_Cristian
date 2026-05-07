@@ -34,7 +34,6 @@ public class Robot extends Entity {
                 for (Cell move : possibleMoves) {
                     if (move.getCurrentOccupant() instanceof Bunny) {
                         nextCell = move;
-                        //System.out.println("🚨 " + name + " caught the bunny at " + nextCell + "! Robots win!");
                         synchronized (sharedMemory) {
                             sharedMemory.addInformation("BUNNY_STATUS", "Caught by " + name);
                         }

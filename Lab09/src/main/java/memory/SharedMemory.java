@@ -8,7 +8,6 @@ public class SharedMemory {
 
     public void addInformation(String key, String info) {
         knowledgeBase.put(key, info);
-        //System.out.println("Shared Memory Updated: " + key + " -> " + info);
     }
 
     public String getInformation(String key) {

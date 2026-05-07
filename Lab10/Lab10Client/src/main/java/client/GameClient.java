@@ -15,11 +15,8 @@ public class GameClient {
 
         try (
                 Socket socket = new Socket(serverAddress, PORT);
-
                 PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
-
                 BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-
                 Scanner scanner = new Scanner(System.in)
         ) {
             System.out.println("Connected to the Game Server at " + serverAddress + ":" + PORT);
@@ -37,7 +34,6 @@ public class GameClient {
                 }
 
                 out.println(command);
-
                 String response = in.readLine();
                 if (response == null) {
                     System.out.println("Connection to server was lost.");
