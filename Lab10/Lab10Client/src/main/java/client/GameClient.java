@@ -19,33 +19,39 @@ public class GameClient {
                 BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
                 Scanner scanner = new Scanner(System.in)
         ) {
-            System.out.println("Connected to the Game Server at " + serverAddress + ":" + PORT);
-            System.out.println("Type your commands. Type 'exit' to quit the client.");
-            System.out.println("Type 'stop' to shut down the server remotely.");
-            System.out.println("---------------------------------------------------------");
 
+            System.out.println("Connected to the Game Server at " + serverAddress + ":" + PORT);
+
+            Thread listenerThread = new Thread(() -> {
+                try {
+                    String serverMessage;
+                    while ((serverMessage = in.readLine()) != null) {
+                        System.out.println("\n[Server]: " + serverMessage);
+                        System.out.print("Enter command/answer: ");
+                    }
+                } catch (IOException e) {
+                    System.out.println("\nDisconnected from the server.");
+                }
+            });
+            listenerThread.start();
             while (true) {
-                System.out.print("Enter command: ");
                 String command = scanner.nextLine().trim();
 
                 if ("exit".equalsIgnoreCase(command)) {
                     System.out.println("Exiting the client application...");
+                    out.println("exit"); // Let the server know we are leaving
                     break;
                 }
 
                 out.println(command);
-                String response = in.readLine();
-                if (response == null) {
-                    System.out.println("Connection to server was lost.");
-                    break;
-                }
 
-                System.out.println("Server says: " + response);
                 if ("stop".equalsIgnoreCase(command)) {
-                    System.out.println("Server has been stopped. Exiting client.");
+                    System.out.println("Server stop command sent. Exiting client.");
                     break;
                 }
             }
+            System.exit(0);
+
         } catch (UnknownHostException e) {
             System.err.println("Server not found: " + e.getMessage());
         } catch (IOException e) {

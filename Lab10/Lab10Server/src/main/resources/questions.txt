@@ -1,0 +1,5 @@
+What is the capital of Romania?;Bucharest
+What is the default port for HTTP?;80
+Which protocol is used to secure web traffic?;HTTPS
+What does TCP stand for?;Transmission Control Protocol
+What is 5 + 7?;12
