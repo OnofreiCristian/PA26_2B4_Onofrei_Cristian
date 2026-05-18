@@ -1,0 +1,8 @@
+May 18, 2026 4:13:20 PM org.example.util.QueryLogger logExecutionTime
+INFO: Execution time for [QuestionRepository.findAll]: 8944 ms
+May 18, 2026 4:13:30 PM org.example.util.QueryLogger logExecutionTime
+INFO: Execution time for [PlayerRepository.findByName]: 48 ms
+May 18, 2026 6:36:28 PM org.example.util.QueryLogger logExecutionTime
+INFO: Execution time for [QuestionRepository.findAll]: 8185 ms
+May 18, 2026 6:36:35 PM org.example.util.QueryLogger logExecutionTime
+INFO: Execution time for [PlayerRepository.findByName]: 45 ms

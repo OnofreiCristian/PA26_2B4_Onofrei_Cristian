@@ -3,6 +3,7 @@ package org.example.repository;
 import jakarta.persistence.EntityManager;
 import org.example.model.Question;
 import org.example.util.PersistenceManager;
+import org.example.util.QueryLogger;
 
 import java.util.List;
 
@@ -25,10 +26,20 @@ public class QuestionRepository {
     }
 
     public List<Question> findAll() {
+
+        long startTime = System.currentTimeMillis();
+
         EntityManager em = PersistenceManager.getEntityManagerFactory().createEntityManager();
         try {
-            return em.createQuery("SELECT q FROM Question q", Question.class).getResultList();
-        } finally {
+            List<Question> questions = em.createQuery("SELECT q FROM Question q", Question.class).getResultList();
+            QueryLogger.logExecutionTime("QuestionRepository.findAll", startTime);
+            return questions;
+        }
+        catch (Exception e) {
+            QueryLogger.logException("QuestionRepository.findAll", e);
+            throw e;
+        }
+        finally {
             em.close();
         }
     }

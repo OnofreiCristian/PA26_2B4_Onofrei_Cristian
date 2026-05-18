@@ -6,6 +6,7 @@ import lombok.Getter;
 @Entity
 @Table(name = "RESULTS")
 @Getter
+@EntityListeners(AuditListener.class)
 public class Result {
 
     @Id

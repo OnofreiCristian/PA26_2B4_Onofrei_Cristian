@@ -1,10 +1,17 @@
 package org.example.model;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 
 @Entity
 @Table(name = "QUESTIONS")
+@EntityListeners(AuditListener.class)
+@Setter
+@Getter
+@NoArgsConstructor
 public class Question {
 
     @Id
@@ -19,15 +26,11 @@ public class Question {
     @Column(name = "CORRECT_ANSWER")
     private String correctAnswer;
 
-    public Question() {}
-
     public Question(String text, String correctAnswer) {
         this.text = text;
         this.correctAnswer = correctAnswer;
     }
 
-    public Long getId() {return id;}
-    public String getText() {return text;}
     public boolean isCorrect(String answer) {return correctAnswer.equals(answer.trim());}
 
 

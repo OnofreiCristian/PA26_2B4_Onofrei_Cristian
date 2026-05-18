@@ -1,5 +1,6 @@
 package server;
 
+import lombok.Getter;
 import org.example.logic.GameSession;
 import org.example.model.Question;
 import org.example.repository.QuestionRepository;
@@ -8,7 +9,6 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.SocketException;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -21,6 +21,7 @@ public class GameServer {
 
     private final ExecutorService threadPool = Executors.newFixedThreadPool(10);
 
+    @Getter
     private GameSession activeSession;
 
     public GameServer() {
@@ -84,10 +85,6 @@ public class GameServer {
             Thread.currentThread().interrupt();
         }
         System.out.println("Server fully stopped.");
-    }
-
-    public GameSession getActiveSession() {
-        return activeSession;
     }
 
     public static void main(String[] args) {
